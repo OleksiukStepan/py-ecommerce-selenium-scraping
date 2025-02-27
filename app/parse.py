@@ -144,10 +144,8 @@ def get_all_products() -> None:
         driver = get_driver()
         driver.get(HOME_URL)
 
-        # Accept cookies
         accept_cookies(driver)
 
-        # Parse products for each category
         scrape_products(
             driver,
             "#side-menu a",
